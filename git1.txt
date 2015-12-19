@@ -1,7 +1,7 @@
 1. 建立git respository
---mkdir gitlearn
---pwd
---git init
+-- mkdir gitlearn
+-- pwd
+-- git init
 
 2. 添加文件进入 respository
 -- add first.txt
@@ -9,3 +9,9 @@
 
 3. 提交文件到仓库
 -- git commit -m "注释" //可一次提交多个文件
+
+4. 查看仓库现在状态
+-- git status
+
+5. 查看修改内容
+-- git diff git1.txt
