@@ -23,3 +23,27 @@
 7. 版本回退
 -- git reset --hard HEAD^ //上一个版本
 -- git reset --hard 1234556 //该版本号版本
+
+8. 丢弃工作区修改
+-- git checkout --git1.txt  //回到最近一次git commit或者git add的状态
+
+9. 丢弃暂存区修改
+-- git reset HEAD git1.txt 
+
+10 删除文件
+-- rm test.txt
+//delete completely
+-- git rm test.txt
+-- git commit
+//recovery
+-- git checkout -- test.txt
+
+11 关联远程仓库
+-- git remote add origin git@github.com:Robotwing/starting.git
+
+12 把内容推送到远程库
+-- git push -u origin master //the first time
+-- git push origin master
+
+13 从远程库克隆内容
+-- git clone git@github.com:Robotwing/starting.git
