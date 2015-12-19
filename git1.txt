@@ -20,4 +20,6 @@
 -- git log
 -- git log --pretty=oneline //只显示版本号与描述
 
-7.
+7. 版本回退
+-- git reset --hard HEAD^ //上一个版本
+-- git reset --hard 1234556 //该版本号版本
