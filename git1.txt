@@ -55,6 +55,33 @@
 -- git branch //列出所有分支，当前分支前标*号
 -- git merge dev //将dev合并到当前分支
 -- git branch -d dev
+-- git branch -D dev //强行删除未合并的dev分支
 
-15 分支管理
+15 查看分支合并情况
+-- git log --graph --pretty=oneline --abbrev-commit
 
+16 fast forward模式合并保留分支信息
+-- git merge --no-ff -m "merge with no-ff" dev
+
+17 把另一个分支的commit应用到当前分支
+-- git cherry-pick <commit id>
+
+18 暂存状态
+-- git stash 
+-- git stash list
+--git stash apply stash@{0}
+
+-- git stash apply //恢复同时不删除stash内容
+-- git stash drop
+
+-- git stash pop   //恢复同时删除stash内容
+
+19 查看远程库详细信息
+-- git remote -v
+
+20 抓取远程新提交
+-- git pull
+
+30 创建、关联远程分支  //clone只能获取本地master分支
+-- git checkout -b branch-name origin/branch-name
+-- git branch --set-upstream branch-name origin/branch-name
