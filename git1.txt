@@ -82,6 +82,14 @@
 20 抓取远程新提交
 -- git pull
 
-30 创建、关联远程分支  //clone只能获取本地master分支
+21 创建、关联远程分支  //clone只能获取本地master分支
 -- git checkout -b branch-name origin/branch-name
 -- git branch --set-upstream branch-name origin/branch-name
+
+22 标签
+-- git tag v1.0 //当前分支最新commit
+-- git tag v0.9 <commit id>
+-- git show <tagname>
+-- git tag -a v0.1 -m "version 0.1 released" 3628164
+-- git tag -s v0.1 -m "version 0.1 released" 3628164
+-- git tag -u "robotwing" -s v0.1 -m "version 0.1 released" 3628164
